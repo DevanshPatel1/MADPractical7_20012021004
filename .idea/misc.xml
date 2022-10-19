@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Student/AndroidStudioProjects/MADPractical7_20012021004/app/src/main/res/drawable/ic_baseline_add_alarm_24.xml" value="0.1" />
-        <entry key="..\:/Users/Student/AndroidStudioProjects/MADPractical7_20012021004/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/StudioProjects/MADPractical7_20012021004/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/StudioProjects/MADPractical7_20012021004/app/src/main/res/drawable/ic_baseline_add_alarm_24.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/StudioProjects/MADPractical7_20012021004/app/src/main/res/drawable/ic_baseline_alarm_off_24.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/StudioProjects/MADPractical7_20012021004/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
