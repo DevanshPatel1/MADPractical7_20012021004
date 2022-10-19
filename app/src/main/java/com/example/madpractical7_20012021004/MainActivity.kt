@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        binding.textview42.format12Hour = "hh:mm:ss a"
+        binding.textclock.format12Hour = "hh:mm:ss a"
 
-        binding.cardview2.visibility= View.GONE
+        binding.mvc2.visibility= View.GONE
 
         binding.btnCreateAlarm.setOnClickListener {
             var cal: Calendar = Calendar.getInstance()
@@ -40,20 +40,20 @@ class MainActivity : AppCompatActivity() {
                     view, h, m ->
                 mili=getMillis(h,m)
                 setAlarm(getMillis(h,m),"Start")
-                binding.cardview2.visibility=View.VISIBLE
-                binding.textview4.text=h.toString()+":"+m.toString()
+                binding.mvc2.visibility=View.VISIBLE
+                binding.text5.text=h.toString()+":"+m.toString()
             }),hour,min,false)
             tpd.show()
         }
 
         binding.btnCancelAlarm.setOnClickListener{
             setAlarm(mili,"Stop")
-            binding.cardview2.visibility=View.GONE
+            binding.mvc2.visibility=View.GONE
         }
     }
     fun setAlarm(millisTime: Long, str: String)
     {
-        val intent = Intent(this, AlarmBroadCastReceiver::class.java)
+        val intent = Intent(this,AlarmBroadCastReceiver::class.java)
         intent.putExtra("Service1", str)
         val pendingIntent =
             PendingIntent.getBroadcast(applicationContext, 234324243, intent, 0)
